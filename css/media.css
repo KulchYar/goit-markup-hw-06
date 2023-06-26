@@ -95,6 +95,9 @@
     
          /** ---------------------HERO-TABLET----------------- */
 .hero {
+    max-width: 768px;
+    height: 436px;
+
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tab.jpg);
     
@@ -143,6 +146,11 @@
 
 /** ---------------------TEAM-TABLET----------------- */
 
+.team-list {
+    row-gap: 64px;
+        column-gap: 24px;
+}
+
 .team-list-item {
     width: calc((100% - 24px * 3) / 2);
 }
@@ -153,7 +161,7 @@
 }
 
 .customers-list-item {
-    width: calc((100% - 48px) / 3);
+    width: 168px;
 }
 
 .customers-list-icon {
@@ -164,7 +172,8 @@
  /** ---------------------BACKDROP------------------ */
 
  .backdrop-modal {
-    height: 408px;
+    width: 408px;
+    overflow: hidden;
  }
 
  /** ---------------------FOOTER-TABLET----------------- */
@@ -172,14 +181,22 @@
 
  .footer-container {
     max-width: 584px;
+    display: flex;
      flex-wrap: wrap;
-     flex-direction: row;
      column-gap: 24px;
      row-gap: 72px;
-     text-align: unset;
-     justify-content: unset;
-     align-items: unset;
+     
                 }
+
+.footer-logo {
+    text-align: unset;
+}
+
+
+.footer-icon-text {
+    text-align: unset;
+}
+
 .footer-text {
     width: 264px;
 
@@ -191,7 +208,17 @@
 
             }
 
-/** ---------------------PROJECTS------------------ */
+.footer-subsripe-title {
+    text-align: unset;
+}
+
+
+.form-subscripe {
+    display: flex;
+    gap: 24px;
+}
+
+/** ---------------------PROJECTS-TABLET----------------- */
 
 .projects {
     padding-top: 64px;
@@ -247,6 +274,8 @@
 
         /** ---------------------HERO-DESKTOP----------------- */
         .hero {
+            max-width: 1440px;
+            height: 600px;
             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
                     padding: 188px 0;
@@ -370,10 +399,12 @@
 .footer-container {
     flex-wrap: nowrap;
     align-items: baseline;
+    gap: unset;
 }
 
 .footer-logo-wrap {
     margin-right: 120px;
+    margin-bottom: unset;
 }
 
 
